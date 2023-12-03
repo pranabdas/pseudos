@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
+import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
@@ -26,6 +27,7 @@ function App() {
   const [selectedPseudoSubType, setSelectedPseudoSubType] = useState("");
   const [inputText, setInputText] = useState("");
   const [psData, setPsData] = useState<string[]>([]);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSelectLib = (e: SelectChangeEvent) => {
     let selectedLib = e.target.value;
@@ -37,8 +39,9 @@ function App() {
     setPseudoTypes([]);
     setSelectedPseudoType("");
     setPseudoSubTypes([]);
-    setSelectedPseudoSubType("")
+    setSelectedPseudoSubType("");
     setPsData([]);
+    setErrorMessage("");
   };
 
   const handleSelectVersion = (e: SelectChangeEvent) => {
@@ -48,8 +51,9 @@ function App() {
     setSelectedPseudoLibVersion(version);
     setPseudoTypes(pseudoTypes);
     setPseudoSubTypes([]);
-    setSelectedPseudoSubType("")
+    setSelectedPseudoSubType("");
     setPsData([]);
+    setErrorMessage("");
   };
 
   const handleSelectType = (e: SelectChangeEvent) => {
@@ -63,6 +67,7 @@ function App() {
     setSelectedPseudoType(selectedType);
     setPseudoSubTypes(pseudoSubTypes);
     setPsData([]);
+    setErrorMessage("");
   };
 
   const handleSelectSubType = (e: SelectChangeEvent) => {
@@ -70,10 +75,13 @@ function App() {
 
     setSelectedPseudoSubType(selectedSubType);
     setPsData([]);
+    setErrorMessage("");
   };
 
   const handleInputText = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputText(e.target.value);
+    setPsData([]);
+    setErrorMessage("");
   };
 
   const handleSubmit = (e: React.SyntheticEvent) => {
@@ -115,6 +123,10 @@ function App() {
               "https://raw.githubusercontent.com/pranabdas/pseudos/" +
                 path +
                 data[element]["filename"]
+            );
+          } else {
+            setErrorMessage(
+              "One or more pseudopotential files are not found! Make sure you have typed chemical symbol(s) correctly and they are comma separated. If your input is correct, you may try searching different library/ version/ type/ sub-type."
             );
           }
         });
@@ -277,13 +289,15 @@ function App() {
             </>
           )}
 
+        {errorMessage !== "" && (
+          <>
+            <Alert severity="error">{errorMessage}</Alert>
+          </>
+        )}
+
         {psData.length > 0 && (
           <>
-            <p>
-              You may right-click on the links and select{" "}
-              <i>Download/Save Link As</i>.
-            </p>
-            <ul>
+            <ul style={{ padding: "20px" }}>
               {psData.map((data, index) => (
                 <li key={index}>
                   <a href={data} target="_blank">
@@ -292,6 +306,10 @@ function App() {
                 </li>
               ))}
             </ul>
+            <Alert severity="info">
+              You may right-click on the links above and select{" "}
+              <i>Download/Save Link As</i>.
+            </Alert>
           </>
         )}
       </div>
