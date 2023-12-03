@@ -259,6 +259,10 @@ function App() {
 
         {psData.length > 0 && (
           <>
+            <p>
+              You may right-click on the links and select{" "}
+              <i>Download/Save Link As</i>.
+            </p>
             <ul>
               {psData.map((data, index) => (
                 <li key={index}>
