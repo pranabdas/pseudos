@@ -277,3 +277,7 @@ td {
 .wrapper {
   min-height: calc(100vh - 4em);
 }
+
+li {
+  list-style-type: disc;
+}

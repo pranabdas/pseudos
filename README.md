@@ -18,3 +18,8 @@ Run local dev server:
 ```console
 npm run dev
 ```
+
+Add MUI:
+```console
+npm install @mui/material @emotion/react @emotion/styled
+```
