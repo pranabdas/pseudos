@@ -275,7 +275,7 @@ td {
 }
 
 .wrapper {
-  min-height: calc(100vh - 4em);
+  min-height: calc(100vh - 5em);
 }
 
 li {

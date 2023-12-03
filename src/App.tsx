@@ -14,6 +14,7 @@ import libNames, {
   findConfigFile,
   findPath,
 } from "./utils";
+import Footer from "./Footer";
 
 function App() {
   const [selectedLib, setSelectedLib] = useState("");
@@ -275,6 +276,7 @@ function App() {
           </>
         )}
       </div>
+      <Footer />
     </div>
   );
 }
