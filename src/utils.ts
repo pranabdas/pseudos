@@ -1,4 +1,4 @@
-import { pseudoLibs } from "./lib_data";
+import { pseudoLibs } from "./pseudos";
 
 let libNames: string[] = [];
 pseudoLibs.forEach((element) => {
@@ -58,6 +58,7 @@ export const findPseudoSubTypes = (
   return result;
 };
 
+// find config file given library name, version, type, and sub-type
 export const findConfigFile = (
   name: string,
   version: string,
@@ -78,6 +79,7 @@ export const findConfigFile = (
   return "";
 };
 
+// find data base path given library name, version, type, and sub-type
 export const findPath = (
   name: string,
   version: string,

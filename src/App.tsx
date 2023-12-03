@@ -33,6 +33,12 @@ function App() {
 
     setSelectedLib(selectedLib);
     setPseudoLibVersions(pseudoLibVersions);
+    setSelectedPseudoLibVersion("");
+    setPseudoTypes([]);
+    setSelectedPseudoType("");
+    setPseudoSubTypes([]);
+    setSelectedPseudoSubType("")
+    setPsData([]);
   };
 
   const handleSelectVersion = (e: SelectChangeEvent) => {
@@ -41,6 +47,9 @@ function App() {
 
     setSelectedPseudoLibVersion(version);
     setPseudoTypes(pseudoTypes);
+    setPseudoSubTypes([]);
+    setSelectedPseudoSubType("")
+    setPsData([]);
   };
 
   const handleSelectType = (e: SelectChangeEvent) => {
@@ -53,12 +62,14 @@ function App() {
 
     setSelectedPseudoType(selectedType);
     setPseudoSubTypes(pseudoSubTypes);
+    setPsData([]);
   };
 
   const handleSelectSubType = (e: SelectChangeEvent) => {
     let selectedSubType = e.target.value;
 
     setSelectedPseudoSubType(selectedSubType);
+    setPsData([]);
   };
 
   const handleInputText = (e: React.ChangeEvent<HTMLInputElement>) => {
