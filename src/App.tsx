@@ -115,6 +115,14 @@ function App() {
       });
   };
 
+  const fileNameFromUrl = (url: string): string => {
+    const filename = url.split("/").pop();
+    if (filename && filename.length > 0) {
+      return filename.charAt(0).toUpperCase() + filename.slice(1);
+    }
+    return url;
+  };
+
   return (
     <div className="container">
       <div className="wrapper">
@@ -268,7 +276,7 @@ function App() {
               {psData.map((data, index) => (
                 <li key={index}>
                   <a href={data} target="_blank">
-                    {data}
+                    {fileNameFromUrl(data)}
                   </a>
                 </li>
               ))}
