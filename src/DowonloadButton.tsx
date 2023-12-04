@@ -26,10 +26,20 @@ export default function DownloadButton({ url }: { url: string }) {
       sx={{ display: "flex", gap: 2, alignItems: "center" }}
       style={{ padding: "5px" }}
     >
-      <Button onClick={handleClick} startDecorator={<DownloadIcon />}>
+      <Button
+        onClick={handleClick}
+        startDecorator={<DownloadIcon />}
+        title="Click to download/save file"
+      >
         {fileNameFromUrl(url)}
       </Button>
-      <IconButton aria-label="Open in new tab" component="a" href={url}>
+      <IconButton
+        aria-label="Open in new tab"
+        component="a"
+        href={url}
+        target="_blank"
+        title="Open file in new tab"
+      >
         <OpenInNew />
       </IconButton>
     </Box>

@@ -9,6 +9,7 @@ import MenuItem from "@mui/material/MenuItem";
 import SearchIcon from "@mui/icons-material/Search";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
 import libNames, {
   findPseudoTypes,
   findPseudoSubTypes,
@@ -40,7 +41,7 @@ function App() {
     selectedSubType: "",
   });
   const [inputText, setInputText] = useState("");
-  const [psData, setPsData] = useState<string[]>([]);
+  const [pseudoList, setPseudoList] = useState<string[]>([]);
   const [elementNotFound, setElementNotFound] = useState<string[]>([]);
 
   const handleSelectLib = (e: SelectChangeEvent) => {
@@ -57,7 +58,7 @@ function App() {
       subTypes: [],
       selectedSubType: "",
     });
-    setPsData([]);
+    setPseudoList([]);
     setElementNotFound([]);
   };
 
@@ -69,10 +70,11 @@ function App() {
       ...appState,
       selectedVersion: selectedVersion,
       pseudoTypes: pseudoTypes,
+      selectedType: "",
       subTypes: [],
       selectedSubType: "",
     });
-    setPsData([]);
+    setPseudoList([]);
     setElementNotFound([]);
   };
 
@@ -90,7 +92,7 @@ function App() {
       subTypes: subTypes,
       selectedSubType: "",
     });
-    setPsData([]);
+    setPseudoList([]);
     setElementNotFound([]);
   };
 
@@ -98,13 +100,13 @@ function App() {
     let selectedSubType = e.target.value;
 
     setAppState({ ...appState, selectedSubType: selectedSubType });
-    setPsData([]);
+    setPseudoList([]);
     setElementNotFound([]);
   };
 
   const handleInputText = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputText(e.target.value);
-    setPsData([]);
+    setPseudoList([]);
     setElementNotFound([]);
   };
 
@@ -133,8 +135,8 @@ function App() {
       appState.selectedSubType
     );
 
-    let psData: string[] = [];
-    let el: string[] = [];
+    let pseudoList: string[] = [];
+    let notFound: string[] = [];
 
     fetch(configFile)
       .then((response) => {
@@ -143,17 +145,17 @@ function App() {
       .then((data) => {
         elementsArr.forEach((element) => {
           if (data.hasOwnProperty(element)) {
-            psData.push(
+            pseudoList.push(
               "https://raw.githubusercontent.com/pranabdas/pseudos/" +
                 path +
                 data[element]["filename"]
             );
           } else {
-            el.push(element);
+            notFound.push(element);
           }
         });
-        setPsData(psData);
-        setElementNotFound(el);
+        setPseudoList(pseudoList);
+        setElementNotFound(notFound);
       })
       .catch((e: Error) => {
         console.log(e.message);
@@ -163,15 +165,18 @@ function App() {
   return (
     <div className="container">
       <div className="wrapper">
-        <h3 style={{ color: "rgb(45, 107, 196)" }}>Pseudopotentials</h3>
+        <Typography variant="h4" style={{ color: "rgb(45, 107, 196)", paddingBottom: "6px" }}>
+          Pseudopotentials
+        </Typography>
         <hr />
-        <br />
-        <p>A place to find various pseudopotentials.</p>
+        <p style={{ fontSize: "1.1em", color: "hsl(13, 88%, 68%)", paddingTop: "8px"}}>
+          <i>All in one place to find various pseudopotentials.</i>
+        </p>
         <br />
 
         {/* Pseudopotential library selection */}
         <>
-          <p>Please select Pseudopotential library:</p>
+          <p>Please select pseudopotential library:</p>
           <Box sx={{ m: 1, minWidth: 120 }}>
             <FormControl fullWidth>
               <InputLabel id="lib">Library</InputLabel>
@@ -179,7 +184,7 @@ function App() {
                 labelId="lib"
                 id="lib"
                 value={appState.library || ""}
-                label="lib"
+                label="Library"
                 onChange={handleSelectLib}
               >
                 {libNames.map((item, key) => (
@@ -193,17 +198,17 @@ function App() {
         </>
 
         {/* Pseudopotential version selection */}
-        {appState.versions.length > 0 && (
+        {appState.versions.length > 0 && appState.library !== "" && (
           <>
-            <p>Please select Pseudopotential library version:</p>
+            <p>Please select pseudopotential library version:</p>
             <Box sx={{ m: 1, minWidth: 120 }}>
               <FormControl fullWidth>
-                <InputLabel id="type">Version</InputLabel>
+                <InputLabel id="version">Version</InputLabel>
                 <Select
-                  labelId="type"
-                  id="type"
+                  labelId="version"
+                  id="version"
                   value={appState.selectedVersion || ""}
-                  label="type"
+                  label="Version"
                   onChange={handleSelectVersion}
                 >
                   {appState.versions.map((item, key) => (
@@ -218,9 +223,9 @@ function App() {
         )}
 
         {/* Pseudopotential type selection */}
-        {appState.versions.length > 0 && appState.pseudoTypes.length > 0 && (
+        {appState.pseudoTypes.length > 0 && appState.selectedVersion !== "" && (
           <>
-            <p>Please select Pseudopotential type:</p>
+            <p>Please select pseudopotential functional type:</p>
             <Box sx={{ m: 1, minWidth: 120 }}>
               <FormControl fullWidth>
                 <InputLabel id="type">Type</InputLabel>
@@ -228,7 +233,7 @@ function App() {
                   labelId="type"
                   id="type"
                   value={appState.selectedType || ""}
-                  label="type"
+                  label="Type"
                   onChange={handleSelectType}
                 >
                   {appState.pseudoTypes.map((item, key) => (
@@ -243,70 +248,66 @@ function App() {
         )}
 
         {/* Pseudopotential sub-type selection */}
-        {appState.versions.length > 0 &&
-          appState.pseudoTypes.length > 0 &&
-          appState.subTypes.length > 0 && (
-            <>
-              <p>Please select Pseudopotential sub-type:</p>
-              <Box sx={{ m: 1, minWidth: 120 }}>
-                <FormControl fullWidth>
-                  <InputLabel id="type">Sub-type</InputLabel>
-                  <Select
-                    labelId="type"
-                    id="type"
-                    value={appState.selectedSubType || ""}
-                    label="type"
-                    onChange={handleSelectSubType}
-                  >
-                    {appState.subTypes.map((item, key) => (
-                      <MenuItem value={item} key={key}>
-                        {item}
-                      </MenuItem>
-                    ))}
-                  </Select>
-                </FormControl>
-              </Box>
-            </>
-          )}
+        {appState.subTypes.length > 0 && appState.selectedType !== "" && (
+          <>
+            <p>Please select pseudopotential sub-type:</p>
+            <Box sx={{ m: 1, minWidth: 120 }}>
+              <FormControl fullWidth>
+                <InputLabel id="subtype">Sub-type</InputLabel>
+                <Select
+                  labelId="subtype"
+                  id="subtype"
+                  value={appState.selectedSubType || ""}
+                  label="Sub-type"
+                  onChange={handleSelectSubType}
+                >
+                  {appState.subTypes.map((item, key) => (
+                    <MenuItem value={item} key={key}>
+                      {item}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+            </Box>
+          </>
+        )}
 
-        {appState.versions.length > 0 &&
-          appState.pseudoTypes.length > 0 &&
-          appState.selectedSubType !== "" && (
-            <>
-              <p>
-                Enter element names/ chemical symbols (one or more comma or
-                space separated):
-              </p>
-              <Box
-                component="form"
-                sx={{ m: 1 }}
-                noValidate
-                autoComplete="off"
-                onSubmit={handleSubmit}
-              >
-                <TextField
-                  fullWidth
-                  id="element"
-                  label="Element"
-                  variant="outlined"
-                  value={inputText || ""}
-                  placeholder="Fe, O"
-                  onChange={handleInputText}
-                />
+        {appState.selectedSubType !== "" && (
+          <>
+            <p>
+              Enter element names/chemical symbols (one or more, comma or space
+              separated):
+            </p>
+            <Box
+              component="form"
+              sx={{ m: 1 }}
+              noValidate
+              autoComplete="off"
+              onSubmit={handleSubmit}
+            >
+              <TextField
+                fullWidth
+                id="element"
+                label="Element"
+                variant="outlined"
+                value={inputText || ""}
+                placeholder="Fe, O"
+                onChange={handleInputText}
+              />
 
-                {inputText !== "" && psData.length === 0 && (
-                  <Button
-                    onClick={handleSubmit}
-                    type="submit"
-                    startDecorator={<SearchIcon />}
-                    style={{ marginTop: "10px" }}
-                  >
-                    Find Pseudos
-                  </Button>
-                )}
-              </Box>
-            </>
-          )}
+              {inputText !== "" && pseudoList.length === 0 && (
+                <Button
+                  onClick={handleSubmit}
+                  type="submit"
+                  startDecorator={<SearchIcon />}
+                  style={{ marginTop: "10px" }}
+                >
+                  Find Pseudos
+                </Button>
+              )}
+            </Box>
+          </>
+        )}
 
         {elementNotFound.length > 0 && (
           <>
@@ -323,9 +324,9 @@ function App() {
           </>
         )}
 
-        {psData.length > 0 && (
+        {pseudoList.length > 0 && (
           <div style={{ paddingTop: "10px" }}>
-            {psData.map((url, index) => (
+            {pseudoList.map((url, index) => (
               <DownloadButton url={url} key={index} />
             ))}
           </div>

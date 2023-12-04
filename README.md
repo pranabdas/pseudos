@@ -4,7 +4,7 @@
 <a href=https://app.netlify.com/sites/pseudos/deploys><img src="https://api.netlify.com/api/v1/badges/20168620-4d9d-4a72-a1ad-cf223f591d6f/deploy-status" alt="Netlify Status" /></a>
 </p>
 
-A place to find various pseudopotentials. Visit webapp -
+All in one place to find various pseudopotentials. Visit webapp -
 https://pseudos.netlify.app
 
 
