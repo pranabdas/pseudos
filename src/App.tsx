@@ -19,55 +19,76 @@ import libNames, {
 import DownloadButton from "./DowonloadButton";
 import Footer from "./Footer";
 
+interface AppState {
+  library: string;
+  versions: string[];
+  selectedVersion: string;
+  pseudoTypes: string[];
+  selectedType: string;
+  subTypes: string[];
+  selectedSubType: string;
+}
+
 function App() {
-  const [selectedLib, setSelectedLib] = useState("");
-  const [pseudoLibVersions, setPseudoLibVersions] = useState<string[]>([]);
-  const [selectedPseudoLibVersion, setSelectedPseudoLibVersion] = useState("");
-  const [pseudoTypes, setPseudoTypes] = useState<string[]>([]);
-  const [selectedPseudoType, setSelectedPseudoType] = useState("");
-  const [pseudoSubTypes, setPseudoSubTypes] = useState<string[]>([]);
-  const [selectedPseudoSubType, setSelectedPseudoSubType] = useState("");
+  const [appState, setAppState] = useState<AppState>({
+    library: "",
+    versions: [],
+    selectedVersion: "",
+    pseudoTypes: [],
+    selectedType: "",
+    subTypes: [],
+    selectedSubType: "",
+  });
   const [inputText, setInputText] = useState("");
   const [psData, setPsData] = useState<string[]>([]);
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleSelectLib = (e: SelectChangeEvent) => {
-    let selectedLib = e.target.value;
-    let pseudoLibVersions = findPseudoLibVersions(selectedLib);
+    let library = e.target.value;
+    let versions = findPseudoLibVersions(library);
 
-    setSelectedLib(selectedLib);
-    setPseudoLibVersions(pseudoLibVersions);
-    setSelectedPseudoLibVersion("");
-    setPseudoTypes([]);
-    setSelectedPseudoType("");
-    setPseudoSubTypes([]);
-    setSelectedPseudoSubType("");
+    setAppState({
+      ...appState,
+      library: library,
+      versions: versions,
+      selectedVersion: "",
+      pseudoTypes: [],
+      selectedType: "",
+      subTypes: [],
+      selectedSubType: "",
+    });
     setPsData([]);
     setErrorMessage("");
   };
 
   const handleSelectVersion = (e: SelectChangeEvent) => {
-    let version = e.target.value;
-    let pseudoTypes = findPseudoTypes(selectedLib, version);
+    let selectedVersion = e.target.value;
+    let pseudoTypes = findPseudoTypes(appState.library, selectedVersion);
 
-    setSelectedPseudoLibVersion(version);
-    setPseudoTypes(pseudoTypes);
-    setPseudoSubTypes([]);
-    setSelectedPseudoSubType("");
+    setAppState({
+      ...appState,
+      selectedVersion: selectedVersion,
+      pseudoTypes: pseudoTypes,
+      subTypes: [],
+      selectedSubType: "",
+    });
     setPsData([]);
     setErrorMessage("");
   };
 
   const handleSelectType = (e: SelectChangeEvent) => {
     let selectedType = e.target.value;
-    let pseudoSubTypes = findPseudoSubTypes(
-      selectedLib,
-      selectedPseudoLibVersion,
+    let subTypes = findPseudoSubTypes(
+      appState.library,
+      appState.selectedVersion,
       selectedType
     );
 
-    setSelectedPseudoType(selectedType);
-    setPseudoSubTypes(pseudoSubTypes);
+    setAppState({
+      ...appState,
+      selectedType: selectedType,
+      subTypes: subTypes,
+    });
     setPsData([]);
     setErrorMessage("");
   };
@@ -75,7 +96,7 @@ function App() {
   const handleSelectSubType = (e: SelectChangeEvent) => {
     let selectedSubType = e.target.value;
 
-    setSelectedPseudoSubType(selectedSubType);
+    setAppState({ ...appState, selectedSubType: selectedSubType });
     setPsData([]);
     setErrorMessage("");
   };
@@ -99,17 +120,17 @@ function App() {
     });
 
     const configFile = findConfigFile(
-      selectedLib,
-      selectedPseudoLibVersion,
-      selectedPseudoType,
-      selectedPseudoSubType
+      appState.library,
+      appState.selectedVersion,
+      appState.selectedType,
+      appState.selectedSubType
     );
 
     const path = findPath(
-      selectedLib,
-      selectedPseudoLibVersion,
-      selectedPseudoType,
-      selectedPseudoSubType
+      appState.library,
+      appState.selectedVersion,
+      appState.selectedType,
+      appState.selectedSubType
     );
 
     let psData: string[] = [];
@@ -157,7 +178,7 @@ function App() {
               <Select
                 labelId="lib"
                 id="lib"
-                value={selectedLib || ""}
+                value={appState.library || ""}
                 label="lib"
                 onChange={handleSelectLib}
               >
@@ -172,7 +193,7 @@ function App() {
         </>
 
         {/* Pseudopotential version selection */}
-        {pseudoLibVersions.length > 0 && (
+        {appState.versions.length > 0 && (
           <>
             <p>Please select Pseudopotential library version:</p>
             <Box sx={{ m: 1, minWidth: 120 }}>
@@ -181,11 +202,11 @@ function App() {
                 <Select
                   labelId="type"
                   id="type"
-                  value={selectedPseudoLibVersion || ""}
+                  value={appState.selectedVersion || ""}
                   label="type"
                   onChange={handleSelectVersion}
                 >
-                  {pseudoLibVersions.map((item, key) => (
+                  {appState.versions.map((item, key) => (
                     <MenuItem value={item} key={key}>
                       {item}
                     </MenuItem>
@@ -197,7 +218,7 @@ function App() {
         )}
 
         {/* Pseudopotential type selection */}
-        {pseudoLibVersions.length > 0 && pseudoTypes.length > 0 && (
+        {appState.versions.length > 0 && appState.pseudoTypes.length > 0 && (
           <>
             <p>Please select Pseudopotential type:</p>
             <Box sx={{ m: 1, minWidth: 120 }}>
@@ -206,11 +227,11 @@ function App() {
                 <Select
                   labelId="type"
                   id="type"
-                  value={selectedPseudoType || ""}
+                  value={appState.selectedType || ""}
                   label="type"
                   onChange={handleSelectType}
                 >
-                  {pseudoTypes.map((item, key) => (
+                  {appState.pseudoTypes.map((item, key) => (
                     <MenuItem value={item} key={key}>
                       {item}
                     </MenuItem>
@@ -222,9 +243,9 @@ function App() {
         )}
 
         {/* Pseudopotential sub-type selection */}
-        {pseudoLibVersions.length > 0 &&
-          pseudoTypes.length > 0 &&
-          pseudoSubTypes.length > 0 && (
+        {appState.versions.length > 0 &&
+          appState.pseudoTypes.length > 0 &&
+          appState.subTypes.length > 0 && (
             <>
               <p>Please select Pseudopotential sub-type:</p>
               <Box sx={{ m: 1, minWidth: 120 }}>
@@ -233,11 +254,11 @@ function App() {
                   <Select
                     labelId="type"
                     id="type"
-                    value={selectedPseudoSubType || ""}
+                    value={appState.selectedSubType || ""}
                     label="type"
                     onChange={handleSelectSubType}
                   >
-                    {pseudoSubTypes.map((item, key) => (
+                    {appState.subTypes.map((item, key) => (
                       <MenuItem value={item} key={key}>
                         {item}
                       </MenuItem>
@@ -248,9 +269,9 @@ function App() {
             </>
           )}
 
-        {pseudoLibVersions.length > 0 &&
-          pseudoTypes.length > 0 &&
-          selectedPseudoSubType !== "" && (
+        {appState.versions.length > 0 &&
+          appState.pseudoTypes.length > 0 &&
+          appState.selectedSubType !== "" && (
             <>
               <p>
                 Enter element names/ chemical symbols (one or more comma
