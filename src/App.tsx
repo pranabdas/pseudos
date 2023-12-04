@@ -41,7 +41,7 @@ function App() {
   });
   const [inputText, setInputText] = useState("");
   const [psData, setPsData] = useState<string[]>([]);
-  const [errorMessage, setErrorMessage] = useState("");
+  const [elementNotFound, setElementNotFound] = useState<string[]>([]);
 
   const handleSelectLib = (e: SelectChangeEvent) => {
     let library = e.target.value;
@@ -58,7 +58,7 @@ function App() {
       selectedSubType: "",
     });
     setPsData([]);
-    setErrorMessage("");
+    setElementNotFound([]);
   };
 
   const handleSelectVersion = (e: SelectChangeEvent) => {
@@ -73,7 +73,7 @@ function App() {
       selectedSubType: "",
     });
     setPsData([]);
-    setErrorMessage("");
+    setElementNotFound([]);
   };
 
   const handleSelectType = (e: SelectChangeEvent) => {
@@ -88,9 +88,10 @@ function App() {
       ...appState,
       selectedType: selectedType,
       subTypes: subTypes,
+      selectedSubType: "",
     });
     setPsData([]);
-    setErrorMessage("");
+    setElementNotFound([]);
   };
 
   const handleSelectSubType = (e: SelectChangeEvent) => {
@@ -98,20 +99,19 @@ function App() {
 
     setAppState({ ...appState, selectedSubType: selectedSubType });
     setPsData([]);
-    setErrorMessage("");
+    setElementNotFound([]);
   };
 
   const handleInputText = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputText(e.target.value);
     setPsData([]);
-    setErrorMessage("");
+    setElementNotFound([]);
   };
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
 
-    let text = inputText.replace(/\s/g, "");
-    let elements = text.split(",");
+    let elements = inputText.split(/[\s,]+/);
     elements = elements.filter((x) => x);
 
     let elementsArr: string[] = [];
@@ -134,6 +134,7 @@ function App() {
     );
 
     let psData: string[] = [];
+    let el: string[] = [];
 
     fetch(configFile)
       .then((response) => {
@@ -148,12 +149,11 @@ function App() {
                 data[element]["filename"]
             );
           } else {
-            setErrorMessage(
-              "One or more pseudopotential files are not found! Make sure you have typed chemical symbol(s) correctly and they are comma separated. If your input is correct, you may try searching in different library/ version/ type/ sub-type."
-            );
+            el.push(element);
           }
         });
         setPsData(psData);
+        setElementNotFound(el);
       })
       .catch((e: Error) => {
         console.log(e.message);
@@ -274,8 +274,8 @@ function App() {
           appState.selectedSubType !== "" && (
             <>
               <p>
-                Enter element names/ chemical symbols (one or more comma
-                separated):
+                Enter element names/ chemical symbols (one or more comma or
+                space separated):
               </p>
               <Box
                 component="form"
@@ -308,9 +308,18 @@ function App() {
             </>
           )}
 
-        {errorMessage !== "" && (
+        {elementNotFound.length > 0 && (
           <>
-            <Alert severity="error">{errorMessage}</Alert>
+            <Alert severity="error">
+              Pseudopotential {elementNotFound.length > 1 ? "files" : "file"}{" "}
+              for{" "}
+              <span style={{ color: "red" }}>{elementNotFound.join(", ")}</span>{" "}
+              {elementNotFound.length > 1 ? "are" : "is"} not found! Make sure
+              you have typed chemical{" "}
+              {elementNotFound.length > 1 ? "symbols" : "symbol"} correctly, and
+              they are comma or space separated. If your input is correct, you
+              may try searching in different library/ version/ type/ sub-type.
+            </Alert>
           </>
         )}
 
