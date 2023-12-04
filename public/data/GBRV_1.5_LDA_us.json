@@ -1,0 +1,191 @@
+{
+  "Ag": {
+    "filename": "ag_lda_v1.4.uspp.F.UPF"
+  },
+  "Al": {
+    "filename": "al_lda_v1.uspp.F.UPF"
+  },
+  "As": {
+    "filename": "as_lda_v1.uspp.F.UPF"
+  },
+  "Au": {
+    "filename": "au_lda_v1.uspp.F.UPF"
+  },
+  "B": {
+    "filename": "b_lda_v1.4.uspp.F.UPF"
+  },
+  "Ba": {
+    "filename": "ba_lda_v1.uspp.F.UPF"
+  },
+  "Be": {
+    "filename": "be_lda_v1.4.uspp.F.UPF"
+  },
+  "Br": {
+    "filename": "br_lda_v1.4.uspp.F.UPF"
+  },
+  "C": {
+    "filename": "c_lda_v1.2.uspp.F.UPF"
+  },
+  "Ca": {
+    "filename": "ca_lda_v1.uspp.F.UPF"
+  },
+  "Cd": {
+    "filename": "cd_lda_v1.uspp.F.UPF"
+  },
+  "Cl": {
+    "filename": "cl_lda_v1.4.uspp.F.UPF"
+  },
+  "Co": {
+    "filename": "co_lda_v1.2.uspp.F.UPF"
+  },
+  "Cr": {
+    "filename": "cr_lda_v1.5.uspp.F.UPF"
+  },
+  "Cs": {
+    "filename": "cs_lda_v1.uspp.F.UPF"
+  },
+  "Cu": {
+    "filename": "cu_lda_v1.2.uspp.F.UPF"
+  },
+  "F": {
+    "filename": "f_lda_v1.4.uspp.F.UPF"
+  },
+  "Fe": {
+    "filename": "fe_lda_v1.5.uspp.F.UPF"
+  },
+  "Ga": {
+    "filename": "ga_lda_v1.4.uspp.F.UPF"
+  },
+  "Ge": {
+    "filename": "ge_lda_v1.4.uspp.F.UPF"
+  },
+  "H": {
+    "filename": "h_lda_v1.4.uspp.F.UPF"
+  },
+  "Hf": {
+    "filename": "hf_lda_v1.uspp.F.UPF"
+  },
+  "Hg": {
+    "filename": "hg_lda_v1.uspp.F.UPF"
+  },
+  "I": {
+    "filename": "i_lda_v1.uspp.F.UPF"
+  },
+  "In": {
+    "filename": "in_lda_v1.4.uspp.F.UPF"
+  },
+  "Ir": {
+    "filename": "ir_lda_v1.2.uspp.F.UPF"
+  },
+  "K": {
+    "filename": "k_lda_v1.4.uspp.F.UPF"
+  },
+  "La": {
+    "filename": "la_lda_v1.uspp.F.UPF"
+  },
+  "Li": {
+    "filename": "li_lda_v1.4.uspp.F.UPF"
+  },
+  "Mg": {
+    "filename": "mg_lda_v1.4.uspp.F.UPF"
+  },
+  "Mn": {
+    "filename": "mn_lda_v1.5.uspp.F.UPF"
+  },
+  "Mo": {
+    "filename": "mo_lda_v1.uspp.F.UPF"
+  },
+  "N": {
+    "filename": "n_lda_v1.2.uspp.F.UPF"
+  },
+  "Na": {
+    "filename": "na_lda_v1.5.uspp.F.UPF"
+  },
+  "Nb": {
+    "filename": "nb_lda_v1.uspp.F.UPF"
+  },
+  "Ni": {
+    "filename": "ni_lda_v1.4.uspp.F.UPF"
+  },
+  "O": {
+    "filename": "o_lda_v1.2.uspp.F.UPF"
+  },
+  "Os": {
+    "filename": "os_lda_v1.2.uspp.F.UPF"
+  },
+  "P": {
+    "filename": "p_lda_v1.5.uspp.F.UPF"
+  },
+  "Pb": {
+    "filename": "pb_lda_v1.uspp.F.UPF"
+  },
+  "Pd": {
+    "filename": "pd_lda_v1.4.uspp.F.UPF"
+  },
+  "Pt": {
+    "filename": "pt_lda_v1.4.uspp.F.UPF"
+  },
+  "Rb": {
+    "filename": "rb_lda_v1.uspp.F.UPF"
+  },
+  "Re": {
+    "filename": "re_lda_v1.2.uspp.F.UPF"
+  },
+  "Rh": {
+    "filename": "rh_lda_v1.4.uspp.F.UPF"
+  },
+  "Ru": {
+    "filename": "ru_lda_v1.2.uspp.F.UPF"
+  },
+  "S": {
+    "filename": "s_lda_v1.4.uspp.F.UPF"
+  },
+  "Sb": {
+    "filename": "sb_lda_v1.4.uspp.F.UPF"
+  },
+  "Sc": {
+    "filename": "sc_lda_v1.uspp.F.UPF"
+  },
+  "Se": {
+    "filename": "se_lda_v1.uspp.F.UPF"
+  },
+  "Si": {
+    "filename": "si_lda_v1.uspp.F.UPF"
+  },
+  "Sn": {
+    "filename": "sn_lda_v1.4.uspp.F.UPF"
+  },
+  "Sr": {
+    "filename": "sr_lda_v1.uspp.F.UPF"
+  },
+  "Ta": {
+    "filename": "ta_lda_v1.uspp.F.UPF"
+  },
+  "Tc": {
+    "filename": "tc_lda_v1.uspp.F.UPF"
+  },
+  "Te": {
+    "filename": "te_lda_v1.uspp.F.UPF"
+  },
+  "Ti": {
+    "filename": "ti_lda_v1.4.uspp.F.UPF"
+  },
+  "Tl": {
+    "filename": "tl_lda_v1.2.uspp.F.UPF"
+  },
+  "V": {
+    "filename": "v_lda_v1.4.uspp.F.UPF"
+  },
+  "W": {
+    "filename": "w_lda_v1.2.uspp.F.UPF"
+  },
+  "Y": {
+    "filename": "y_lda_v1.4.uspp.F.UPF"
+  },
+  "Zn": {
+    "filename": "zn_lda_v1.uspp.F.UPF"
+  },
+  "Zr": {
+    "filename": "zr_lda_v1.uspp.F.UPF"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "Ag": {
+    "filename": "ag_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Al": {
+    "filename": "al_pbesol_v1.uspp.F.UPF"
+  },
+  "As": {
+    "filename": "as_pbesol_v1.uspp.F.UPF"
+  },
+  "Au": {
+    "filename": "au_pbesol_v1.uspp.F.UPF"
+  },
+  "B": {
+    "filename": "b_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Ba": {
+    "filename": "ba_pbesol_v1.uspp.F.UPF"
+  },
+  "Be": {
+    "filename": "be_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Br": {
+    "filename": "br_pbesol_v1.4.uspp.F.UPF"
+  },
+  "C": {
+    "filename": "c_pbesol_v1.2.uspp.F.UPF"
+  },
+  "Ca": {
+    "filename": "ca_pbesol_v1.uspp.F.UPF"
+  },
+  "Cd": {
+    "filename": "cd_pbesol_v1.uspp.F.UPF"
+  },
+  "Cl": {
+    "filename": "cl_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Co": {
+    "filename": "co_pbesol_v1.2.uspp.F.UPF"
+  },
+  "Cr": {
+    "filename": "cr_pbesol_v1.5.uspp.F.UPF"
+  },
+  "Cs": {
+    "filename": "cs_pbesol_v1.uspp.F.UPF"
+  },
+  "Cu": {
+    "filename": "cu_pbesol_v1.2.uspp.F.UPF"
+  },
+  "F": {
+    "filename": "f_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Fe": {
+    "filename": "fe_pbesol_v1.5.uspp.F.UPF"
+  },
+  "Ga": {
+    "filename": "ga_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Ge": {
+    "filename": "ge_pbesol_v1.4.uspp.F.UPF"
+  },
+  "H": {
+    "filename": "h_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Hf": {
+    "filename": "hf_pbesol_v1.uspp.F.UPF"
+  },
+  "Hg": {
+    "filename": "hg_pbesol_v1.uspp.F.UPF"
+  },
+  "I": {
+    "filename": "i_pbesol_v1.uspp.F.UPF"
+  },
+  "In": {
+    "filename": "in_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Ir": {
+    "filename": "ir_pbesol_v1.2.uspp.F.UPF"
+  },
+  "K": {
+    "filename": "k_pbesol_v1.4.uspp.F.UPF"
+  },
+  "La": {
+    "filename": "la_pbesol_v1.uspp.F.UPF"
+  },
+  "Li": {
+    "filename": "li_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Mg": {
+    "filename": "mg_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Mn": {
+    "filename": "mn_pbesol_v1.5.uspp.F.UPF"
+  },
+  "Mo": {
+    "filename": "mo_pbesol_v1.uspp.F.UPF"
+  },
+  "N": {
+    "filename": "n_pbesol_v1.2.uspp.F.UPF"
+  },
+  "Na": {
+    "filename": "na_pbesol_v1.5.uspp.F.UPF"
+  },
+  "Nb": {
+    "filename": "nb_pbesol_v1.uspp.F.UPF"
+  },
+  "Ni": {
+    "filename": "ni_pbesol_v1.4.uspp.F.UPF"
+  },
+  "O": {
+    "filename": "o_pbesol_v1.2.uspp.F.UPF"
+  },
+  "Os": {
+    "filename": "os_pbesol_v1.2.uspp.F.UPF"
+  },
+  "P": {
+    "filename": "p_pbesol_v1.5.uspp.F.UPF"
+  },
+  "Pb": {
+    "filename": "pb_pbesol_v1.uspp.F.UPF"
+  },
+  "Pd": {
+    "filename": "pd_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Pt": {
+    "filename": "pt_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Rb": {
+    "filename": "rb_pbesol_v1.uspp.F.UPF"
+  },
+  "Re": {
+    "filename": "re_pbesol_v1.2.uspp.F.UPF"
+  },
+  "Rh": {
+    "filename": "rh_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Ru": {
+    "filename": "ru_pbesol_v1.2.uspp.F.UPF"
+  },
+  "S": {
+    "filename": "s_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Sb": {
+    "filename": "sb_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Sc": {
+    "filename": "sc_pbesol_v1.uspp.F.UPF"
+  },
+  "Se": {
+    "filename": "se_pbesol_v1.uspp.F.UPF"
+  },
+  "Si": {
+    "filename": "si_pbesol_v1.uspp.F.UPF"
+  },
+  "Sn": {
+    "filename": "sn_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Sr": {
+    "filename": "sr_pbesol_v1.uspp.F.UPF"
+  },
+  "Ta": {
+    "filename": "ta_pbesol_v1.uspp.F.UPF"
+  },
+  "Tc": {
+    "filename": "tc_pbesol_v1.uspp.F.UPF"
+  },
+  "Te": {
+    "filename": "te_pbesol_v1.uspp.F.UPF"
+  },
+  "Ti": {
+    "filename": "ti_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Tl": {
+    "filename": "tl_pbesol_v1.2.uspp.F.UPF"
+  },
+  "V": {
+    "filename": "v_pbesol_v1.4.uspp.F.UPF"
+  },
+  "W": {
+    "filename": "w_pbesol_v1.2.uspp.F.UPF"
+  },
+  "Y": {
+    "filename": "y_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Zn": {
+    "filename": "zn_pbesol_v1.uspp.F.UPF"
+  },
+  "Zr": {
+    "filename": "zr_pbesol_v1.uspp.F.UPF"
+  }
+}

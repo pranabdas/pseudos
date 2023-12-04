@@ -1,0 +1,311 @@
+{
+  "Ac": {
+    "filename": "Ac.us.z_11.ld1.psl.v1.0.0-high.upf"
+  },
+  "Ag": {
+    "filename": "Ag_ONCV_PBEsol-1.0.upf"
+  },
+  "Al": {
+    "filename": "Al.pbesol-n-kjpaw_psl.1.0.0.UPF"
+  },
+  "Am": {
+    "filename": "Am.paw.z_17.ld1.uni-marburg.v0.upf"
+  },
+  "Ar": {
+    "filename": "Ar_ONCV_PBEsol-1.1.upf"
+  },
+  "As": {
+    "filename": "As.pbesol-n-rrkjus_psl.0.2.UPF"
+  },
+  "At": {
+    "filename": "At.us.z_17.ld1.psl.v1.0.0-high.upf"
+  },
+  "Au": {
+    "filename": "Au_ONCV_PBEsol-1.0.upf"
+  },
+  "B": {
+    "filename": "b_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Ba": {
+    "filename": "Ba.pbesol-spn-kjpaw_psl.1.0.0.UPF"
+  },
+  "Be": {
+    "filename": "be_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Bi": {
+    "filename": "bi_pbesol_v1.uspp.F.UPF"
+  },
+  "Bk": {
+    "filename": "Bk.paw.z_19.ld1.uni-marburg.v0.upf"
+  },
+  "Br": {
+    "filename": "br_pbesol_v1.4.uspp.F.UPF"
+  },
+  "C": {
+    "filename": "C.pbesol-n-kjpaw_psl.1.0.0.UPF"
+  },
+  "Ca": {
+    "filename": "ca_pbesol_v1.uspp.F.UPF"
+  },
+  "Cd": {
+    "filename": "Cd.pbesol-dn-rrkjus_psl.0.3.1.UPF"
+  },
+  "Ce": {
+    "filename": "Ce.paw.z_12.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "Cf": {
+    "filename": "Cf.paw.z_20.ld1.uni-marburg.v0.upf"
+  },
+  "Cl": {
+    "filename": "cl_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Cm": {
+    "filename": "Cm.paw.z_18.ld1.uni-marburg.v0.upf"
+  },
+  "Co": {
+    "filename": "co_pbesol_v1.2.uspp.F.UPF"
+  },
+  "Cr": {
+    "filename": "cr_pbesol_v1.5.uspp.F.UPF"
+  },
+  "Cs": {
+    "filename": "cs_pbesol_v1.uspp.F.UPF"
+  },
+  "Cu": {
+    "filename": "Cu.paw.z_11.ld1.psl.v1.0.0-low.upf"
+  },
+  "Dy": {
+    "filename": "Dy.paw.z_20.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "Er": {
+    "filename": "Er.paw.z_22.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "Es": {
+    "filename": "Es.paw.z_21.ld1.uni-marburg.v0.upf"
+  },
+  "Eu": {
+    "filename": "Eu.paw.z_17.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "F": {
+    "filename": "f_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Fe": {
+    "filename": "Fe.pbesol-spn-kjpaw_psl.0.2.1.UPF"
+  },
+  "Fm": {
+    "filename": "Fm.paw.z_22.ld1.uni-marburg.v0.upf"
+  },
+  "Fr": {
+    "filename": "Fr.paw.z_19.ld1.psl.v1.0.0-high.upf"
+  },
+  "Ga": {
+    "filename": "Ga.pbesol-dn-kjpaw_psl.1.0.0.UPF"
+  },
+  "Gd": {
+    "filename": "Gd.paw.z_18.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "Ge": {
+    "filename": "ge_pbesol_v1.4.uspp.F.UPF"
+  },
+  "H": {
+    "filename": "H.pbesol-rrkjus_psl.1.0.0.UPF"
+  },
+  "He": {
+    "filename": "He_ONCV_PBEsol-1.0.upf"
+  },
+  "Hf": {
+    "filename": "Hf-sp.oncvpsp.upf"
+  },
+  "Hg": {
+    "filename": "Hg_ONCV_PBEsol-1.0.upf"
+  },
+  "Ho": {
+    "filename": "Ho.paw.z_21.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "I": {
+    "filename": "I.pbesol-n-kjpaw_psl.0.2.UPF"
+  },
+  "In": {
+    "filename": "In.pbesol-dn-rrkjus_psl.0.2.2.UPF"
+  },
+  "Ir": {
+    "filename": "ir_pbesol_v1.2.uspp.F.UPF"
+  },
+  "K": {
+    "filename": "K.pbesol-spn-kjpaw_psl.1.0.0.UPF"
+  },
+  "Kr": {
+    "filename": "Kr_ONCV_PBEsol-1.0.upf"
+  },
+  "La": {
+    "filename": "La.paw.z_11.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "Li": {
+    "filename": "li_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Lr": {
+    "filename": "Lr.paw.z_25.ld1.uni-marburg.v0.upf"
+  },
+  "Lu": {
+    "filename": "Lu.paw.z_25.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "Md": {
+    "filename": "Md.paw.z_23.ld1.uni-marburg.v0.upf"
+  },
+  "Mg": {
+    "filename": "Mg.pbesol-n-kjpaw_psl.0.3.0.UPF"
+  },
+  "Mn": {
+    "filename": "mn_pbesol_v1.5.uspp.F.UPF"
+  },
+  "Mo": {
+    "filename": "Mo_ONCV_PBEsol-1.0.upf"
+  },
+  "N": {
+    "filename": "N.pbesol-theos.UPF"
+  },
+  "Na": {
+    "filename": "na_pbesol_v1.5.uspp.F.UPF"
+  },
+  "Nb": {
+    "filename": "Nb.pbesol-spn-kjpaw_psl.0.3.0.UPF"
+  },
+  "Nd": {
+    "filename": "Nd.paw.z_14.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "Ne": {
+    "filename": "Ne_ONCV_PBEsol-1.0.upf"
+  },
+  "Ni": {
+    "filename": "ni_pbesol_v1.4.uspp.F.UPF"
+  },
+  "No": {
+    "filename": "No.paw.z_24.ld1.uni-marburg.v0.upf"
+  },
+  "Np": {
+    "filename": "Np.paw.z_15.ld1.uni-marburg.v0.upf"
+  },
+  "O": {
+    "filename": "O.pbesol-n-kjpaw_psl.0.1.UPF"
+  },
+  "Os": {
+    "filename": "os_pbesol_v1.2.uspp.F.UPF"
+  },
+  "P": {
+    "filename": "P.pbesol-n-rrkjus_psl.1.0.0.UPF"
+  },
+  "Pa": {
+    "filename": "Pa.paw.z_13.ld1.uni-marburg.v0.upf"
+  },
+  "Pb": {
+    "filename": "Pb.pbesol-dn-kjpaw_psl.0.2.2.UPF"
+  },
+  "Pd": {
+    "filename": "Pd_ONCV_PBEsol-1.0.upf"
+  },
+  "Pm": {
+    "filename": "Pm.paw.z_15.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "Po": {
+    "filename": "Po.pbesol-dn-rrkjus_psl.1.0.0.UPF"
+  },
+  "Pr": {
+    "filename": "Pr.paw.z_13.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "Pt": {
+    "filename": "pt_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Pu": {
+    "filename": "Pu.paw.z_16.ld1.uni-marburg.v0.upf"
+  },
+  "Ra": {
+    "filename": "Ra.paw.z_20.ld1.psl.v1.0.0-high.upf"
+  },
+  "Rb": {
+    "filename": "Rb_ONCV_PBEsol-1.0.upf"
+  },
+  "Re": {
+    "filename": "re_pbesol_v1.2.uspp.F.UPF"
+  },
+  "Rh": {
+    "filename": "Rh_ONCV_PBEsol-1.0.upf"
+  },
+  "Rn": {
+    "filename": "Rn.pbesol-dn-kjpaw_psl.1.0.0.UPF"
+  },
+  "Ru": {
+    "filename": "Ru_ONCV_PBEsol-1.0.upf"
+  },
+  "S": {
+    "filename": "s_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Sb": {
+    "filename": "sb_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Sc": {
+    "filename": "Sc_ONCV_PBEsol-1.0.upf"
+  },
+  "Se": {
+    "filename": "se_pbesol_v1.uspp.F.UPF"
+  },
+  "Si": {
+    "filename": "Si.pbesol-n-rrkjus_psl.1.0.0.UPF"
+  },
+  "Sm": {
+    "filename": "Sm.paw.z_16.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "Sn": {
+    "filename": "sn_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Sr": {
+    "filename": "sr_pbesol_v1.uspp.F.UPF"
+  },
+  "Ta": {
+    "filename": "ta_pbesol_v1.uspp.F.UPF"
+  },
+  "Tb": {
+    "filename": "Tb.paw.z_19.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "Tc": {
+    "filename": "Tc_ONCV_PBEsol-1.0.upf"
+  },
+  "Te": {
+    "filename": "te_pbesol_v1.uspp.F.UPF"
+  },
+  "Th": {
+    "filename": "Th.paw.z_12.ld1.uni-marburg.v0.upf"
+  },
+  "Ti": {
+    "filename": "ti_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Tl": {
+    "filename": "tl_pbesol_v1.2.uspp.F.UPF"
+  },
+  "Tm": {
+    "filename": "Tm.paw.z_23.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "U": {
+    "filename": "U.paw.z_14.ld1.uni-marburg.v0.upf"
+  },
+  "V": {
+    "filename": "v_pbesol_v1.4.uspp.F.UPF"
+  },
+  "W": {
+    "filename": "w_pbesol_v1.2.uspp.F.UPF"
+  },
+  "Xe": {
+    "filename": "Xe_ONCV_PBEsol-1.1.upf"
+  },
+  "Y": {
+    "filename": "y_pbesol_v1.4.uspp.F.UPF"
+  },
+  "Yb": {
+    "filename": "Yb.paw.z_24.atompaw.wentzcovitch.v1.2.upf"
+  },
+  "Zn": {
+    "filename": "zn_pbesol_v1.uspp.F.UPF"
+  },
+  "Zr": {
+    "filename": "zr_pbesol_v1.uspp.F.UPF"
+  }
+}

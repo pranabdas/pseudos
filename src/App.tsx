@@ -163,10 +163,10 @@ function App() {
   return (
     <div className="container">
       <div className="wrapper">
-        <h3 style={{ color: "rgb(45, 107, 196)" }}>Pseudopotential Library</h3>
+        <h3 style={{ color: "rgb(45, 107, 196)" }}>Pseudopotentials</h3>
         <hr />
         <br />
-        <p>A place to download various pseudopotentials.</p>
+        <p>A place to find various pseudopotentials.</p>
         <br />
 
         {/* Pseudopotential library selection */}

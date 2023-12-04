@@ -1,0 +1,194 @@
+{
+  "Ag": {
+    "filename": "ag_pbe_v1.4.uspp.F.UPF"
+  },
+  "Al": {
+    "filename": "al_pbe_v1.uspp.F.UPF"
+  },
+  "As": {
+    "filename": "as_pbe_v1.uspp.F.UPF"
+  },
+  "Au": {
+    "filename": "au_pbe_v1.uspp.F.UPF"
+  },
+  "B": {
+    "filename": "b_pbe_v1.4.uspp.F.UPF"
+  },
+  "Ba": {
+    "filename": "ba_pbe_v1.uspp.F.UPF"
+  },
+  "Be": {
+    "filename": "be_pbe_v1.4.uspp.F.UPF"
+  },
+  "Bi": {
+    "filename": "bi_pbe_v1.uspp.F.UPF"
+  },
+  "Br": {
+    "filename": "br_pbe_v1.4.uspp.F.UPF"
+  },
+  "C": {
+    "filename": "c_pbe_v1.2.uspp.F.UPF"
+  },
+  "Ca": {
+    "filename": "ca_pbe_v1.uspp.F.UPF"
+  },
+  "Cd": {
+    "filename": "cd_pbe_v1.uspp.F.UPF"
+  },
+  "Cl": {
+    "filename": "cl_pbe_v1.4.uspp.F.UPF"
+  },
+  "Co": {
+    "filename": "co_pbe_v1.2.uspp.F.UPF"
+  },
+  "Cr": {
+    "filename": "cr_pbe_v1.5.uspp.F.UPF"
+  },
+  "Cs": {
+    "filename": "cs_pbe_v1.uspp.F.UPF"
+  },
+  "Cu": {
+    "filename": "cu_pbe_v1.2.uspp.F.UPF"
+  },
+  "F": {
+    "filename": "f_pbe_v1.4.uspp.F.UPF"
+  },
+  "Fe": {
+    "filename": "fe_pbe_v1.5.uspp.F.UPF"
+  },
+  "Ga": {
+    "filename": "ga_pbe_v1.4.uspp.F.UPF"
+  },
+  "Ge": {
+    "filename": "ge_pbe_v1.4.uspp.F.UPF"
+  },
+  "H": {
+    "filename": "h_pbe_v1.4.uspp.F.UPF"
+  },
+  "Hf": {
+    "filename": "hf_pbe_v1.uspp.F.UPF"
+  },
+  "Hg": {
+    "filename": "hg_pbe_v1.uspp.F.UPF"
+  },
+  "I": {
+    "filename": "i_pbe_v1.uspp.F.UPF"
+  },
+  "In": {
+    "filename": "in_pbe_v1.4.uspp.F.UPF"
+  },
+  "Ir": {
+    "filename": "ir_pbe_v1.2.uspp.F.UPF"
+  },
+  "K": {
+    "filename": "k_pbe_v1.4.uspp.F.UPF"
+  },
+  "La": {
+    "filename": "la_pbe_v1.uspp.F.UPF"
+  },
+  "Li": {
+    "filename": "li_pbe_v1.4.uspp.F.UPF"
+  },
+  "Mg": {
+    "filename": "mg_pbe_v1.4.uspp.F.UPF"
+  },
+  "Mn": {
+    "filename": "mn_pbe_v1.5.uspp.F.UPF"
+  },
+  "Mo": {
+    "filename": "mo_pbe_v1.uspp.F.UPF"
+  },
+  "N": {
+    "filename": "n_pbe_v1.2.uspp.F.UPF"
+  },
+  "Na": {
+    "filename": "na_pbe_v1.5.uspp.F.UPF"
+  },
+  "Nb": {
+    "filename": "nb_pbe_v1.uspp.F.UPF"
+  },
+  "Ni": {
+    "filename": "ni_pbe_v1.4.uspp.F.UPF"
+  },
+  "O": {
+    "filename": "o_pbe_v1.2.uspp.F.UPF"
+  },
+  "Os": {
+    "filename": "os_pbe_v1.2.uspp.F.UPF"
+  },
+  "P": {
+    "filename": "p_pbe_v1.5.uspp.F.UPF"
+  },
+  "Pb": {
+    "filename": "pb_pbe_v1.uspp.F.UPF"
+  },
+  "Pd": {
+    "filename": "pd_pbe_v1.4.uspp.F.UPF"
+  },
+  "Pt": {
+    "filename": "pt_pbe_v1.4.uspp.F.UPF"
+  },
+  "Rb": {
+    "filename": "rb_pbe_v1.uspp.F.UPF"
+  },
+  "Re": {
+    "filename": "re_pbe_v1.2.uspp.F.UPF"
+  },
+  "Rh": {
+    "filename": "rh_pbe_v1.4.uspp.F.UPF"
+  },
+  "Ru": {
+    "filename": "ru_pbe_v1.2.uspp.F.UPF"
+  },
+  "S": {
+    "filename": "s_pbe_v1.4.uspp.F.UPF"
+  },
+  "Sb": {
+    "filename": "sb_pbe_v1.4.uspp.F.UPF"
+  },
+  "Sc": {
+    "filename": "sc_pbe_v1.uspp.F.UPF"
+  },
+  "Se": {
+    "filename": "se_pbe_v1.uspp.F.UPF"
+  },
+  "Si": {
+    "filename": "si_pbe_v1.uspp.F.UPF"
+  },
+  "Sn": {
+    "filename": "sn_pbe_v1.4.uspp.F.UPF"
+  },
+  "Sr": {
+    "filename": "sr_pbe_v1.uspp.F.UPF"
+  },
+  "Ta": {
+    "filename": "ta_pbe_v1.uspp.F.UPF"
+  },
+  "Tc": {
+    "filename": "tc_pbe_v1.uspp.F.UPF"
+  },
+  "Te": {
+    "filename": "te_pbe_v1.uspp.F.UPF"
+  },
+  "Ti": {
+    "filename": "ti_pbe_v1.4.uspp.F.UPF"
+  },
+  "Tl": {
+    "filename": "tl_pbe_v1.2.uspp.F.UPF"
+  },
+  "V": {
+    "filename": "v_pbe_v1.4.uspp.F.UPF"
+  },
+  "W": {
+    "filename": "w_pbe_v1.2.uspp.F.UPF"
+  },
+  "Y": {
+    "filename": "y_pbe_v1.4.uspp.F.UPF"
+  },
+  "Zn": {
+    "filename": "zn_pbe_v1.uspp.F.UPF"
+  },
+  "Zr": {
+    "filename": "zr_pbe_v1.uspp.F.UPF"
+  }
+}
