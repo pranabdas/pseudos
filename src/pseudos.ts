@@ -12,7 +12,7 @@ export interface PseudoLibType {
 export const pseudoLibs: PseudoLibType[] = [
   {
     name: "SSSP",
-    url: "https://www.materialscloud.org/discover/sssp/table/efficiency",
+    url: "https://www.materialscloud.org/discover/sssp/table/precision",
     description: "A standard solid-state pseudopotentials (SSSP) library.",
     version: "1.3.0",
     type: "PBE",

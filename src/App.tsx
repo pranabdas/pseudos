@@ -2,12 +2,13 @@ import * as React from "react";
 import { useState } from "react";
 import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
+import Button from "@mui/joy/Button";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
+import SearchIcon from "@mui/icons-material/Search";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import TextField from "@mui/material/TextField";
-
 import libNames, {
   findPseudoTypes,
   findPseudoSubTypes,
@@ -15,6 +16,7 @@ import libNames, {
   findConfigFile,
   findPath,
 } from "./utils";
+import DownloadButton from "./DowonloadButton";
 import Footer from "./Footer";
 
 function App() {
@@ -93,7 +95,7 @@ function App() {
 
     let elementsArr: string[] = [];
     elements.forEach((x) => {
-      elementsArr.push(x.charAt(0).toUpperCase() + x.slice(1));
+      elementsArr.push(x.charAt(0).toUpperCase() + x.slice(1).toLowerCase());
     });
 
     const configFile = findConfigFile(
@@ -126,11 +128,10 @@ function App() {
             );
           } else {
             setErrorMessage(
-              "One or more pseudopotential files are not found! Make sure you have typed chemical symbol(s) correctly and they are comma separated. If your input is correct, you may try searching different library/ version/ type/ sub-type."
+              "One or more pseudopotential files are not found! Make sure you have typed chemical symbol(s) correctly and they are comma separated. If your input is correct, you may try searching in different library/ version/ type/ sub-type."
             );
           }
         });
-
         setPsData(psData);
       })
       .catch((e: Error) => {
@@ -138,18 +139,10 @@ function App() {
       });
   };
 
-  const fileNameFromUrl = (url: string): string => {
-    const filename = url.split("/").pop();
-    if (filename && filename.length > 0) {
-      return filename.charAt(0).toUpperCase() + filename.slice(1);
-    }
-    return url;
-  };
-
   return (
     <div className="container">
       <div className="wrapper">
-        <h3 style={{ color: "#15847b" }}>Pseudopotential Library</h3>
+        <h3 style={{ color: "rgb(45, 107, 196)" }}>Pseudopotential Library</h3>
         <hr />
         <br />
         <p>A place to download various pseudopotentials.</p>
@@ -280,10 +273,15 @@ function App() {
                   onChange={handleInputText}
                 />
 
-                {inputText !== "" && (
-                  <button onClick={handleSubmit} className="btn" type="submit">
+                {inputText !== "" && psData.length === 0 && (
+                  <Button
+                    onClick={handleSubmit}
+                    type="submit"
+                    startDecorator={<SearchIcon />}
+                    style={{ marginTop: "10px" }}
+                  >
                     Find Pseudos
-                  </button>
+                  </Button>
                 )}
               </Box>
             </>
@@ -296,21 +294,11 @@ function App() {
         )}
 
         {psData.length > 0 && (
-          <>
-            <ul style={{ padding: "20px" }}>
-              {psData.map((data, index) => (
-                <li key={index}>
-                  <a href={data} target="_blank">
-                    {fileNameFromUrl(data)}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <Alert severity="info">
-              You may right-click on the links above and select{" "}
-              <i>Download/Save Link As</i>.
-            </Alert>
-          </>
+          <div style={{ paddingTop: "10px" }}>
+            {psData.map((url, index) => (
+              <DownloadButton url={url} key={index} />
+            ))}
+          </div>
         )}
       </div>
       <Footer />

@@ -99,3 +99,11 @@ export const findPath = (
 
   return "";
 };
+
+export const fileNameFromUrl = (url: string): string => {
+  const filename = url.split("/").pop();
+  if (filename && filename.length > 0) {
+    return filename.charAt(0).toUpperCase() + filename.slice(1);
+  }
+  return url;
+};

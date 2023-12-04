@@ -29,3 +29,8 @@ Add MUI:
 ```console
 npm install @mui/material @emotion/react @emotion/styled
 ```
+
+Add MUI extras:
+```console
+npm i @mui/joy @mui/icons-material
+```
