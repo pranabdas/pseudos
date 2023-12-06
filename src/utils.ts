@@ -107,3 +107,7 @@ export const fileNameFromUrl = (url: string): string => {
   }
   return url;
 };
+
+export const filterDuplicates = (arr: string[]): string[] => {
+  return arr.filter((value, index) => arr.indexOf(value) === index);
+};
