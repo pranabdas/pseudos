@@ -1,5 +1,6 @@
 import Box from "@mui/joy/Box";
 import Button from "@mui/joy/Button";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import DownloadIcon from "@mui/icons-material/Download";
 import IconButton from "@mui/joy/IconButton";
 import OpenInNew from "@mui/icons-material/OpenInNew";
@@ -26,6 +27,10 @@ export default function DownloadButton({ url }: { url: string }) {
         console.log(e.message);
       });
   };
+
+  const handleCopyFileName = () => {
+    navigator.clipboard.writeText(fileName);
+  };
   return (
     <Box
       sx={{ display: "flex", gap: 2, alignItems: "center" }}
@@ -38,6 +43,13 @@ export default function DownloadButton({ url }: { url: string }) {
       >
         {fileName}
       </Button>
+      <IconButton
+        onClick={handleCopyFileName}
+        aria-label="Copy file name"
+        title="Click to copy file name"
+      >
+        <ContentCopyIcon />
+      </IconButton>
       <IconButton
         aria-label="Open in new tab"
         component="a"
