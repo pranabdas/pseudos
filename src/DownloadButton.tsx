@@ -6,6 +6,11 @@ import OpenInNew from "@mui/icons-material/OpenInNew";
 import { fileNameFromUrl } from "./utils";
 
 export default function DownloadButton({ url }: { url: string }) {
+  // make file extension in lowercase for consistency
+  let fileName = fileNameFromUrl(url);
+  if (fileName.slice(-4).toLocaleLowerCase() === ".upf") {
+    fileName = fileName.slice(0, -4) + ".upf";
+  }
   const handleClick = () => {
     fetch(url)
       .then((res) => res.blob())
@@ -13,7 +18,7 @@ export default function DownloadButton({ url }: { url: string }) {
         const element = document.createElement("a");
         const file = new Blob([blob], { type: "text/plain" });
         element.href = URL.createObjectURL(file);
-        element.download = fileNameFromUrl(url);
+        element.download = fileName;
         document.body.appendChild(element);
         element.click();
       })
@@ -31,7 +36,7 @@ export default function DownloadButton({ url }: { url: string }) {
         startDecorator={<DownloadIcon />}
         title="Click to download/save file"
       >
-        {fileNameFromUrl(url)}
+        {fileName}
       </Button>
       <IconButton
         aria-label="Open in new tab"
