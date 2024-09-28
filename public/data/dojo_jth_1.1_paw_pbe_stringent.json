@@ -1,0 +1,260 @@
+{
+  "Ag": {
+    "filename": "Ag.upf"
+  },
+  "Al": {
+    "filename": "Al.upf"
+  },
+  "Ar": {
+    "filename": "Ar.upf"
+  },
+  "As": {
+    "filename": "As.upf"
+  },
+  "At": {
+    "filename": "At.upf"
+  },
+  "Au": {
+    "filename": "Au.upf"
+  },
+  "B": {
+    "filename": "B.upf"
+  },
+  "Ba": {
+    "filename": "Ba.upf"
+  },
+  "Be": {
+    "filename": "Be.upf"
+  },
+  "Bi": {
+    "filename": "Bi.upf"
+  },
+  "Br": {
+    "filename": "Br.upf"
+  },
+  "C": {
+    "filename": "C.upf"
+  },
+  "Ca": {
+    "filename": "Ca.upf"
+  },
+  "Cd": {
+    "filename": "Cd.upf"
+  },
+  "Ce": {
+    "filename": "Ce.upf"
+  },
+  "Cl": {
+    "filename": "Cl.upf"
+  },
+  "Co": {
+    "filename": "Co.upf"
+  },
+  "Cr": {
+    "filename": "Cr.upf"
+  },
+  "Cs": {
+    "filename": "Cs.upf"
+  },
+  "Cu": {
+    "filename": "Cu.upf"
+  },
+  "Dy": {
+    "filename": "Dy.upf"
+  },
+  "Er": {
+    "filename": "Er.upf"
+  },
+  "Eu": {
+    "filename": "Eu.upf"
+  },
+  "F": {
+    "filename": "F.upf"
+  },
+  "Fe": {
+    "filename": "Fe.upf"
+  },
+  "Ga": {
+    "filename": "Ga.upf"
+  },
+  "Gd": {
+    "filename": "Gd.upf"
+  },
+  "Ge": {
+    "filename": "Ge.upf"
+  },
+  "H": {
+    "filename": "H.upf"
+  },
+  "He": {
+    "filename": "He.upf"
+  },
+  "Hf": {
+    "filename": "Hf.upf"
+  },
+  "Hg": {
+    "filename": "Hg.upf"
+  },
+  "Ho": {
+    "filename": "Ho.upf"
+  },
+  "I": {
+    "filename": "I.upf"
+  },
+  "In": {
+    "filename": "In.upf"
+  },
+  "Ir": {
+    "filename": "Ir.upf"
+  },
+  "K": {
+    "filename": "K.upf"
+  },
+  "Kr": {
+    "filename": "Kr.upf"
+  },
+  "La": {
+    "filename": "La.upf"
+  },
+  "Li": {
+    "filename": "Li.upf"
+  },
+  "Lu": {
+    "filename": "Lu.upf"
+  },
+  "Mg": {
+    "filename": "Mg.upf"
+  },
+  "Mn": {
+    "filename": "Mn.upf"
+  },
+  "Mo": {
+    "filename": "Mo.upf"
+  },
+  "N": {
+    "filename": "N.upf"
+  },
+  "Na": {
+    "filename": "Na.upf"
+  },
+  "Nb": {
+    "filename": "Nb.upf"
+  },
+  "Nd": {
+    "filename": "Nd.upf"
+  },
+  "Ne": {
+    "filename": "Ne.upf"
+  },
+  "Ni": {
+    "filename": "Ni.upf"
+  },
+  "O": {
+    "filename": "O.upf"
+  },
+  "Os": {
+    "filename": "Os.upf"
+  },
+  "P": {
+    "filename": "P.upf"
+  },
+  "Pb": {
+    "filename": "Pb.upf"
+  },
+  "Pd": {
+    "filename": "Pd.upf"
+  },
+  "Pm": {
+    "filename": "Pm.upf"
+  },
+  "Po": {
+    "filename": "Po.upf"
+  },
+  "Pr": {
+    "filename": "Pr.upf"
+  },
+  "Pt": {
+    "filename": "Pt.upf"
+  },
+  "Rb": {
+    "filename": "Rb.upf"
+  },
+  "Re": {
+    "filename": "Re.upf"
+  },
+  "Rh": {
+    "filename": "Rh.upf"
+  },
+  "Rn": {
+    "filename": "Rn.upf"
+  },
+  "Ru": {
+    "filename": "Ru.upf"
+  },
+  "S": {
+    "filename": "S.upf"
+  },
+  "Sb": {
+    "filename": "Sb.upf"
+  },
+  "Sc": {
+    "filename": "Sc.upf"
+  },
+  "Se": {
+    "filename": "Se.upf"
+  },
+  "Si": {
+    "filename": "Si.upf"
+  },
+  "Sm": {
+    "filename": "Sm.upf"
+  },
+  "Sn": {
+    "filename": "Sn.upf"
+  },
+  "Sr": {
+    "filename": "Sr.upf"
+  },
+  "Ta": {
+    "filename": "Ta.upf"
+  },
+  "Tb": {
+    "filename": "Tb.upf"
+  },
+  "Tc": {
+    "filename": "Tc.upf"
+  },
+  "Te": {
+    "filename": "Te.upf"
+  },
+  "Ti": {
+    "filename": "Ti.upf"
+  },
+  "Tl": {
+    "filename": "Tl.upf"
+  },
+  "Tm": {
+    "filename": "Tm.upf"
+  },
+  "V": {
+    "filename": "V.upf"
+  },
+  "W": {
+    "filename": "W.upf"
+  },
+  "Xe": {
+    "filename": "Xe.upf"
+  },
+  "Y": {
+    "filename": "Y.upf"
+  },
+  "Yb": {
+    "filename": "Yb.upf"
+  },
+  "Zn": {
+    "filename": "Zn.upf"
+  },
+  "Zr": {
+    "filename": "Zr.upf"
+  }
+}

@@ -103,4 +103,14 @@ export const pseudoLibs: PseudoLibType[] = [
     path: "dojo/0.4/nc-fr/pbe-stringent/",
     config: "dojo_0.4_nc_fr_pbe_stringent.json",
   },
+  {
+    name: "Pseudo dojo (PAW)",
+    url: "http://www.pseudo-dojo.org",
+    description: "Pseudo dojo (JTH-PAW) pseudopotentials.",
+    version: "1.1",
+    type: "PAW (JTH)",
+    subType: "PBE (stringent)",
+    path: "dojo-jth/1.1/paw/pbe-stringent/",
+    config: "dojo_jth_1.1_paw_pbe_stringent.json",
+  },
 ];
