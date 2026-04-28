@@ -1,6 +1,6 @@
 import { pseudoLibs } from "./pseudos";
 
-let libNames: string[] = [];
+const libNames: string[] = [];
 pseudoLibs.forEach((element) => {
   if (!libNames.includes(element.name)) {
     libNames.push(element.name);
@@ -11,7 +11,7 @@ export default libNames;
 
 // find available versions given pseudo library name
 export const findPseudoLibVersions = (name: string): string[] => {
-  let result: string[] = [];
+  const result: string[] = [];
   pseudoLibs.forEach((element) => {
     if (element.name === name && !result.includes(element.version)) {
       result.push(element.version);
@@ -23,7 +23,7 @@ export const findPseudoLibVersions = (name: string): string[] => {
 
 // find available pseudo types given library name and version
 export const findPseudoTypes = (name: string, version: string): string[] => {
-  let result: string[] = [];
+  const result: string[] = [];
   pseudoLibs.forEach((element) => {
     if (
       element.name === name &&
@@ -43,7 +43,7 @@ export const findPseudoSubTypes = (
   version: string,
   pseudoType: string
 ): string[] => {
-  let result: string[] = [];
+  const result: string[] = [];
   pseudoLibs.forEach((element) => {
     if (
       element.name === name &&
