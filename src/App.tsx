@@ -163,7 +163,7 @@ function App() {
   };
 
   const handleSelectSubType = (e: SelectChangeEvent) => {
-    let selectedSubType = e.target.value;
+    const selectedSubType = e.target.value;
 
     setAppState({ ...appState, selectedSubType: selectedSubType });
     setPseudoList([]);
@@ -196,8 +196,8 @@ function App() {
       appState.selectedSubType
     );
 
-    let pseudoList: string[] = [];
-    let notFound: string[] = [];
+    const pseudoList: string[] = [];
+    const notFound: string[] = [];
 
     fetch(configFile)
       .then((response) => {
@@ -207,7 +207,7 @@ function App() {
         elements.forEach((element) => {
           const elementTitleCase =
             element.charAt(0).toUpperCase() + element.slice(1).toLowerCase();
-          if (data.hasOwnProperty(elementTitleCase)) {
+          if (Object.prototype.hasOwnProperty.call(data, elementTitleCase)) {
             pseudoList.push(
               "https://raw.githubusercontent.com/pranabdas/pseudos/" +
                 path +
