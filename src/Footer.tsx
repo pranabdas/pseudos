@@ -1,4 +1,4 @@
-function Footer(): JSX.Element {
+function Footer() {
   return (
     <footer>
       <a href="https://github.com/pranabdas/pseudos" className="github-icon">
